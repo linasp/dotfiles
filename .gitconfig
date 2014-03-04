@@ -7,3 +7,6 @@
     ci = commit
     st = status
     br = branch
+
+[color]
+    diff = auto
