@@ -13,6 +13,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-pathogen'
 
 " Basics
