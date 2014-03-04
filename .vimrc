@@ -22,6 +22,9 @@ Bundle 'tpope/vim-pathogen'
 " Show line numbers.
 set number
 
+" Disable beeps.
+set visualbell
+
 " Change leader key to , (comma).
 let mapleader = ","
 
