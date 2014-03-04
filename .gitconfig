@@ -1,0 +1,9 @@
+[user]
+    name = Linas Petrauskas
+    email = linas.petrauskas@gmail.com
+
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
