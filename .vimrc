@@ -5,16 +5,20 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Vundle bundles.
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-pathogen'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'gmarik/vundle'
+Plugin 'kien/ctrlp.vim'
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-pathogen'
+
+
+call vundle#end()
+filetype plugin indent on
 
 " Basics
 " ------
