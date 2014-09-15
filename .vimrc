@@ -13,9 +13,9 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'gmarik/vundle'
 Plugin 'kien/ctrlp.vim'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-pathogen'
-
 
 call vundle#end()
 filetype plugin indent on
@@ -73,3 +73,9 @@ map <space> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 " ------
 syntax on
 colorscheme jellybeans
+
+" Quickfix
+" --------
+
+" Fix position.
+:autocmd FileType qf wincmd J
