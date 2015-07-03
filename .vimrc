@@ -10,6 +10,7 @@ call vundle#begin()
 
 " Vundle bundles.
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'fholgado/minibufexpl.vim'
 Plugin 'gmarik/vundle'
 Plugin 'kien/ctrlp.vim'
 Plugin 'nanotech/jellybeans.vim'
@@ -66,7 +67,7 @@ set hlsearch
 " Ctrl-n to turn off current search.
 map <C-n> :nohlsearch<CR>
 
-" Space to search word under cursor (without move).
+" The famous Pierre macro.
 map <space> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 
 " Colors
