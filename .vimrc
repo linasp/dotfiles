@@ -10,6 +10,8 @@ call vundle#begin()
 
 " Vundle bundles.
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'ciaranm/inkpot'
+Plugin 'dsolstad/vim-wombat256i'
 Plugin 'gmarik/vundle'
 Plugin 'kien/ctrlp.vim'
 Plugin 'nanotech/jellybeans.vim'
@@ -17,6 +19,9 @@ Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-pathogen'
+Plugin 'morhetz/gruvbox'
+Plugin '29decibel/codeschool-vim-theme'
+Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
 filetype plugin indent on
@@ -73,7 +78,8 @@ map <space> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 " Colors
 " ------
 syntax on
-colorscheme jellybeans
+colorscheme gruvbox
+set background=dark
 
 " Quickfix
 " --------
