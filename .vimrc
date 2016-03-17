@@ -88,7 +88,7 @@ set background=dark
 " Fix position.
 :autocmd FileType qf wincmd J
 
-" Few shortcuts for working with LaTeX files
-" ------------------------------------------
+" Few shortcuts for working with LaTeX files.
+" -------------------------------------------
 nnoremap <leader>c :!pdflatex -output-directory=%:p:h %<CR>
 nnoremap <leader>v :!open %:r.pdf<CR>
