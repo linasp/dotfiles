@@ -10,3 +10,8 @@
 
 [color]
     diff = auto
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[push]
+	default = simple
