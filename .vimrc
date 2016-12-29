@@ -79,8 +79,9 @@ map <space> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 " Colors
 " ------
 syntax on
-colorscheme gruvbox
 set background=dark
+set t_Co=256
+colorscheme gruvbox
 
 " Quickfix
 " --------
