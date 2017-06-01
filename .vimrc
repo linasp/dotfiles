@@ -12,12 +12,14 @@ call vundle#begin()
 Bundle 'tpope/vim-surround'
 Plugin '29decibel/codeschool-vim-theme'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ciaranm/inkpot'
 Plugin 'dsolstad/vim-wombat256i'
 Plugin 'gmarik/vundle'
 Plugin 'kien/ctrlp.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'pikma/space-macro'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
@@ -43,7 +45,7 @@ let mapleader = ","
 " -----
 
 " Easy shortcut for editing vimrc.
-nmap <leader>r :tabedit $MYVIMRC<CR>
+" nmap <leader>r :tabedit $MYVIMRC<CR>
 
 " Source the vimrc file after saving it
 if has("autocmd") && !exists("autocmd_vimrc")
@@ -72,9 +74,6 @@ set hlsearch
 
 " Ctrl-n to turn off current search.
 map <C-n> :nohlsearch<CR>
-
-" The famous Pierre macro.
-map <space> :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 
 " Colors
 " ------
